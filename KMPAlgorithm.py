@@ -1,3 +1,7 @@
+'''
+Implementation of KMP Algorithm
+'''
+
 def prefix_function(pattern):
     n = len(pattern)
     prefix_fun = [0] * n
@@ -32,6 +36,7 @@ def KMP_Matcher(text, pattern):
 
 
 if __name__ == '__main__':
+    print(__doc__)
     print(prefix_function('acacac'))
     KMP_Matcher('adcasfcassa', 'cas')
     KMP_Matcher('abcsesg', 'mkn')
