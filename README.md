@@ -55,10 +55,10 @@ def KMP_Matcher(text, pattern):
             q = prefix_func[q-1]
         if pattern[q] == text[i]:
             q += 1
-            if q == n: # q bang voi chieu dai cua pattern thi tim duoc no
+            if q == n: 
                 print(f'Pattern occours at index {i - n + 1}')
                 flag = True
-                q = prefix_func[q-1]  # Cai ni o cho mo ra day ta ???
+                q = prefix_func[q-1] 
     if not flag:
         print('No match found')
 ```
